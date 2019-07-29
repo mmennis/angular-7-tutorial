@@ -2,6 +2,6 @@
   "compilerOptions": {
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "ESS"
+    "target": "es3"
   }
 }
