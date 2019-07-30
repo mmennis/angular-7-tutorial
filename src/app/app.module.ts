@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { fakeBackendProvider } from './_helpers';
+
 import { appRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home';
@@ -18,6 +20,10 @@ import { RegisterComponent } from './register';
     LoginComponent,
     RegisterComponent
   ],
+  providers: [
+    // provider for fake backend
+    fakeBackendProvider
+  ]
   bootstrap: [AppComponent]
 })
 export class AppModule {}
